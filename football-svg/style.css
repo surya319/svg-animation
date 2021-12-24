@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 219, 190);
+}
+#head{
+    transform-origin: bottom;
+    transform-box: fill-box;
+    animation: head 2s infinite alternate-reverse;
+}
+@keyframes head{
+    100%{
+        transform: translate(14px);
+    }
+}
+#trouser{
+    transform-origin: bottom;
+    animation: up 2s infinite alternate;
+}
+@keyframes up{
+    100%{
+        transform: translate(-10px);
+    }
+}
+#ball{
+    transform-origin: bottom;
+    animation: down 1.5s linear infinite alternate-reverse;
+}
+@keyframes down{
+    100%{
+        transform: translateX(-500px) translateY(-200px);
+       ;
+    }
+}
+#rightleg{
+    transform-origin: top;
+    animation: leg 1.5s ease-in-out infinite alternate;
+    transform-box: fill-box;
+}
+@keyframes leg{
+    100%{
+       transform: rotate(14deg);
+    }
+}
+#lefthand{
+    transform-origin: top;
+    animation: left 1.5s ease-in-out infinite alternate;
+    transform-box: fill-box;
+}
+@keyframes left{
+    100%{
+       transform: rotate(-20deg);
+    }
+}
+#righthand{
+    transform-origin: top;
+    animation: right 1.5s ease-in-out infinite alternate;
+    transform-box: fill-box;
+}
+@keyframes right{
+    100%{
+       transform: rotate(20deg);
+    }
+}
+#football{
+    transform-origin: top;
+    animation: total 1.5s ease-in-out infinite alternate;
+    transform-box: fill-box;
+}
+@keyframes total{
+    100%{
+       transform: rotate(10deg);
+    }
+}
